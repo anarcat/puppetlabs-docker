@@ -324,7 +324,7 @@ def get_defaults(_facts)
                          when 'Debian'
                            case _facts[:os]['name']
                            when 'Debian'
-                             ['cgroupfs-mount']
+                             ['apparmor']
                            when 'Ubuntu'
                              ['cgroup-lite', 'apparmor']
                            else
